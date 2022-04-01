@@ -58,10 +58,10 @@ func main() {
     
     """
     )
-    print("--> ", terminator: "")
-    let input1 = readLine()
     let loop0 = true
     while loop0 {
+        print("--> ", terminator: "")
+        let input1 = readLine()
         if input1 == "1" {
             part1() // Each function will call the next as the story evolves.
         } else if input1 == "2" {
@@ -72,7 +72,7 @@ func main() {
             exit(0)
         }
           else {
-            print("Du musst '1', '2' oder '3' typpen (You must type '1', '2' or '3'")
+            print("Du musst '1', '2' oder '3' typpen / You must type '1', '2' or '3'")
         }
     }
 }

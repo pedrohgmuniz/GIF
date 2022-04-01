@@ -125,7 +125,7 @@ func part5EN() {
     
     print("\nThe wolf asks Little Red Riding Hood: - Where are you going?")
     var loop3 = true
-    let list3 = ["i'm going to my grandmother's","grandmother's","grandmother's house","grandmother","grandmother's place","i'm going to grandmother's","grandmother's","to my grandmother's house","to my grandmother's place","i'm going to my grandma","grandma's","grandma's house","grandmother","grandma's place","i'm going to grandma's","grandma's","to my grandma's house","to my grandma's place"]
+    let list3 = ["i'm going to my grandmother's","to my grandmother's","grandmother's","to grandmother's","grandmother's house","grandmother","grandmother's place","i'm going to grandmother's","grandmother's","to my grandmother's house","to my grandmother's place","i'm going to my grandma","grandma's","grandma's house","grandmother","grandma's place","i'm going to grandma's","grandma's","to my grandma's house","to my grandma's place"]
     while loop3 {
         print("\n--> ", terminator: "")
         let answer5 = readLine()?.lowercased()
@@ -157,7 +157,7 @@ func part6EN() {
 func part7EN() {
     print("\nThe wolf says: - Why are you taking this for your grandma? \n")
     var loop5 = true
-    let list4 = ["my grandmother is sick","grandmother is sick","she is sick","my grandma is sick","grandma is sick","my grandmother is sick","grandmother is sick","grandmother is ill"]
+    let list4 = ["my grandmother is sick","grandmother is sick","she is sick","my grandma is sick","grandma is sick","my grandmother is sick","grandmother is sick","grandmother is ill","she is ill","she's ill"]
     while loop5 {
         print("--> ", terminator: "")
         let answer7 = readLine()?.lowercased()
@@ -473,15 +473,15 @@ func part16EN() {
     """
     )
     var loop15 = true
-    let list13 = ["why do you have such a big mouth?","why do you have a big mouth?","why is your mouth so big?","why is your mouth big?","why does your mouth look so big?"]
+    let list13 = ["why do you have such a big mouth?","why do you have a big mouth?","why is your mouth so big?","why is your mouth big","why does your mouth look so big?","why does your mouth look so big"]
     while loop15 {
-        print("--> ", terminator: "")
+        print("\n--> ", terminator: "")
         let answer16 = readLine()?.lowercased()
         if list13.contains(answer16!) {
             part17EN()
             loop15 = false
         } else {
-            print("\nYou must ask the right questionxn!")
+            print("\nYou must ask the right question!")
         }
     }
  
@@ -509,13 +509,13 @@ func part17EN() {
     )
     
     var loop16extra = true
-    let list13extra = ["go inside","go inside","come in","come in"]
+    let list13extra = ["go inside","go inside","come in","come in","go in"]
     let list13extra2 = ["go away", "go away", "i go away", "he goes away"]
     while loop16extra {
-        print("--> ", terminator: "")
+        print("\n--> ", terminator: "")
         let answer17 = readLine()?.lowercased()
         if list13extra.contains(answer17!) {
-            part18()
+            part18EN()
             loop16extra = false
         } else if list13extra2.contains(answer17!) {
             print(
@@ -531,7 +531,7 @@ func part17EN() {
             )
                         var loop16 = true
                         while loop16 {
-                            print("--> ", terminator: "")
+                            print("\n--> ", terminator: "")
                             let usersChoice3 = readLine()
                             if usersChoice3 == "1" {
                                 part1EN()
@@ -552,6 +552,7 @@ func part17EN() {
 func part18EN() {
     print(
     """
+    
     The hunter goes to grandmother's house. He wants to check on the grandmother.
     Now the hunter is standing in front of grandmother's bed. But it's not the grandmother who's in bed, it's the wolf.
     The hunter is happy because he has been looking for the wolf for a long time. He wants to shoot the wolf. But he thinks, 'Maybe the wolf ate the grandmother. And maybe I can still save the grandmother.'
@@ -575,7 +576,7 @@ func part18EN() {
     )
     var loop17 = true
     while loop17 {
-        print("--> ", terminator: "")
+        print("\n--> ", terminator: "")
         let usersChoice4 = readLine()
         if usersChoice4 == " 1" {
             main()
@@ -583,7 +584,7 @@ func part18EN() {
         } else if usersChoice4 == "2" {
             exit(0)
         } else {
-            print("You must type either '1' or '2' \n")
+            print("\nYou must type either '1' or '2' \n")
         }
     }
 }

@@ -583,7 +583,7 @@ func part18() {
         } else if usersChoice4 == "2" {
             exit(0)
         } else {
-            print("Du musst entweder '1' oder '2' typpen (You must type either '1' or '2' \n")
+            print("\nDu musst entweder '1' oder '2' typpen (You must type either '1' or '2' \n")
         }
     }
 }
