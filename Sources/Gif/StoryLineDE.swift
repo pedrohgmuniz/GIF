@@ -82,9 +82,9 @@ func part3() {
     print("--> ", terminator: "")
     let answer3 = readLine()?.lowercased()
     switch answer3 {
-    case "ok","ja","verstanden":
+    case "ok","ja","verstanden","verstanden!":
         part4()
-    default: break
+    default: part4()
     }
 
 }
@@ -92,7 +92,7 @@ func part3() {
 func part4() {
     print("\nWas machst du jetzt?")
     var loop2 = true
-    let list2 = ["gehe geradeaus", "geradeaus gehen", "geh geradeaus", "haus verlassen", "das haus verlassen"]
+    let list2 = ["gehe geradeaus", "geradeaus gehen", "geh geradeaus", "haus verlassen", "das haus verlassen", "ich verlasse das haus", "ich gehe geradeaus"]
     while loop2 {
         print("\n--> ", terminator: "")
         let answer4 = readLine()?.lowercased()
@@ -100,7 +100,7 @@ func part4() {
             part5()
             loop2 = false
         } else {
-            print("\nDa ist nichts das du brauchst. Du musst jetzt das Haus verlassen. Versuch noch mal \n")
+            print("\nDa ist nichts das du brauchst, oder das ist nicht die richtige Antwort. Du musst jetzt das Haus verlassen. Versuch noch mal!")
         }
     
     }
